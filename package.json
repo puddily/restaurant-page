@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/puddily/restaurant-page/issues"
   },
-  "homepage": "https://github.com/puddily/restaurant-page#readme"
+  "homepage": "https://github.com/puddily/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  }
 }

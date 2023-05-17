@@ -41,17 +41,13 @@ h2{
         padding:0px;
         margin:0px;
     }
-    nav{
-        padding-right:16px;
-    }
     nav ul{
-        gap:32px;
         padding:0px;
         margin:0px;
     }
     nav ul li{
         flex-basis:0;
-        padding:1rem 2rem;
+        padding:1rem 3rem;
     }
     nav ul li:nth-child(1){
         margin-left:auto;

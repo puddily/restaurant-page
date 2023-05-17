@@ -35,7 +35,7 @@ h2{
 
 @media (min-width: 900px){
     h1{
-        position:fixed;
+        position:absolute;
         top:12px;
         left:16px;
         padding:0px;

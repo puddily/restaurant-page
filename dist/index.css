@@ -24,17 +24,21 @@ body{
     -webkit-user-drag: none;
 }
 #hero-content-overlay{
-    font-size:3rem;
+    font-size:2rem;
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     color:rgb(255, 255, 255);
     z-index:2;
+}
+#hero-content-overlay > h2{
+    text-align:center;
+    margin:0;
+    padding:0;
 }
 .alt-color{
     color:rgb(253, 255, 154);
@@ -43,7 +47,7 @@ body{
     background-color:#f1cbb1
 }
 nav{
-    background-color:#f1cbb1
+    background-color:#f1cbb1;
 }
 nav ul{
     padding:0px;
@@ -72,6 +76,10 @@ h2{
 }
 
 @media (min-width: 900px){
+    #hero-content-overlay{
+        font-size:3rem;
+    }
+
     .content-wrapper{
         margin:auto;
         width:70%;

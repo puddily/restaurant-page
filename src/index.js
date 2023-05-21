@@ -1,4 +1,5 @@
 import { buildHeader } from "./header"
+import { buildFooter } from "./footer";
 import { buildHero, buildAbout, buildMenuAction } from "./about";
 console.log("Hello webpack!")
 
@@ -8,3 +9,4 @@ let main = document.querySelector("main");
 main.prepend(buildMenuAction());
 main.prepend(buildAbout());
 main.prepend(buildHero());
+main.appendChild(buildFooter());

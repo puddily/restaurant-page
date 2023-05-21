@@ -1,16 +1,8 @@
 import { buildHeader } from "./header"
+import { buildHero } from "./hero";
 console.log("Hello webpack!")
 
 let content = document.querySelector('#content')
 content.prepend(buildHeader());
-
-
-{/* <header>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-</header> */}
+let main = document.querySelector("main");
+main.prepend(buildHero());

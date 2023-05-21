@@ -69,3 +69,58 @@ export function buildAbout(){
         <p>Our dedicated baristas take pride in crafting each coffee with precision and care. From classic espresso to creamy cappuccinos and refreshing cold brews, our menu offers a wide range of options to cater to all coffee lovers.</p>
     </div>
 </section> */}
+
+export function buildMenuAction(){
+    let section = document.createElement('section')
+    section.id = "menu-action"
+    let overlay = document.createElement('div')
+    overlay.id = "menu-action-overlay";
+    let container1 = buildMenuActionContainer("Wide Assortment", "No matter what you like - strong, smooth, or something special - we've got a cup with your name on it!")
+    let container2 = buildMenuActionContainer("High Quality Beans", "We use 100% Arabica beans, sourced ethically from small farms around the globe.")
+    let container3 = buildMenuActionContainer("Help the globe", "Our coffee cups are made from 100% recycled materials. We also using biodegradable straws and composting our coffee grounds.")
+
+    let menuLink = document.createElement('div')
+    menuLink.id = ("menu-link");
+    let menuLinkA = document.createElement('a')
+    menuLinkA.textContent = "Visit our menu"
+    menuLink.appendChild(menuLinkA)
+
+    overlay.appendChild(container1)
+    overlay.appendChild(container2)
+    overlay.appendChild(container3)
+    section.appendChild(overlay)
+    section.appendChild(menuLink)
+    return section
+    
+}
+function buildMenuActionContainer(headerText, text){
+    let container = document.createElement('div');
+    container.classList.add('container');
+    let header = document.createElement('h3');
+    header.textContent = headerText;
+    let p = document.createElement('p');
+    p.textContent = text;
+    container.appendChild(header)
+    container.appendChild(p)
+    return container
+}
+
+{/* <section id="menu-action">
+    <div id="menu-action-overlay">
+        <div class="container">
+            <h3>Wide Assortment</h3>
+            <p>No matter what you like - strong, smooth, or something special - we've got a cup with your name on it!</p>
+        </div>
+        <div class="container">
+            <h3>High Quality Beans</h3>
+            <p>We use 100% Arabica beans, sourced ethically from small farms around the globe.</p>
+        </div>
+        <div class="container">
+            <h3>Help the globe</h3>
+            <p>Our coffee cups are made from 100% recycled materials. We also using biodegradable straws and composting our coffee grounds.</p>
+        </div>
+    </div>
+    <div id="menu-link">
+        <a>Visit our menu</a>
+    </div>
+</section> */}

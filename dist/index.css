@@ -185,7 +185,7 @@ h2{
 
 #menu{
     /* background-color: rgb(255, 248, 224); */
-    background-color: rgb(250, 236, 205);
+    /* background-color: rgb(250, 236, 205); */
     padding-inline:0px;
     padding-bottom:25px;
 }
@@ -193,6 +193,7 @@ h2{
     font-size:1.75rem;
     text-align:center;
     padding-top:20px;
+    padding-bottom:10px;
 }
 .menu-card{
     display:grid;
@@ -200,7 +201,8 @@ h2{
     grid-template-columns: min-content 1fr;
     align-items:center;
     column-gap:25px;
-    padding:10px;
+    margin:25px;
+    border:4px solid var(--dark-cream);
 }
 
 @media (min-width: 900px){

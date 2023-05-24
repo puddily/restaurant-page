@@ -192,7 +192,6 @@ h2{
 #menu-header{
     font-size:1.75rem;
     text-align:center;
-    padding-top:20px;
     padding-bottom:10px;
 }
 .menu-card{
@@ -201,8 +200,6 @@ h2{
     grid-template-columns: min-content 1fr;
     align-items:center;
     column-gap:25px;
-    margin:25px;
-    border:4px solid var(--dark-cream);
 }
 
 @media (min-width: 900px){

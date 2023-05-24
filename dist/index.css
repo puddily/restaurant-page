@@ -183,6 +183,26 @@ h2{
     margin-bottom:0px;
 }
 
+#menu{
+    /* background-color: rgb(255, 248, 224); */
+    background-color: rgb(250, 236, 205);
+    padding-inline:0px;
+    padding-bottom:25px;
+}
+#menu-header{
+    font-size:1.75rem;
+    text-align:center;
+    padding-top:20px;
+}
+.menu-card{
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-columns: min-content 1fr;
+    align-items:center;
+    column-gap:25px;
+    padding:10px;
+}
+
 @media (min-width: 900px){
     #hero-content-overlay{
         font-size:3rem;
@@ -220,7 +240,7 @@ h2{
         padding:0px;
         margin:0px;
     }
-    h2{
+    .content-wrapper h2{
         text-align:center;
     }
     nav ul{
@@ -233,5 +253,14 @@ h2{
     }
     nav ul li:nth-child(1){
         margin-left:auto;
+    }
+    #menu{
+        padding-inline:15%;
+    }
+    #menu-header{
+        padding-top:30px;
+    }
+    .menu-card{
+        padding:25px;
     }
 }

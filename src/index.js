@@ -1,6 +1,6 @@
-import { buildHeader } from "./header"
-import { buildFooter } from "./footer";
-import { buildHero, buildAbout, buildMenuAction } from "./about";
+import { buildHeader } from "./components/header"
+import { buildFooter } from "./components/footer";
+import { buildHero, buildAbout, buildMenuAction } from "./components/about";
 console.log("Hello webpack!")
 let currentTab = "Menu" //"Home", "Contact", "Menu"
 

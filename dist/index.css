@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
-    --lighter-cream: rgb(250, 255, 234);
+    --lighter-cream: rgb(253, 255, 232);
     --light-cream: rgb(255, 248, 224);
     --light-cream-accent: rgb(253, 255, 154);
     --dark-cream: #f1cbb1;
@@ -190,9 +190,14 @@ h2{
     padding-bottom:25px;
 }
 #menu-header{
+    background-color:var(--lighter-cream);
     font-size:1.75rem;
     text-align:center;
-    padding-bottom:10px;
+    padding:15px;
+    border-radius:15px;
+    margin:10px;
+    margin-top:20px;
+    box-shadow:0 3px 5px rgba(212, 180, 139,0.5);
 }
 .menu-card{
     display:grid;
@@ -257,7 +262,7 @@ h2{
         padding-inline:15%;
     }
     #menu-header{
-        padding-top:30px;
+        padding:25px;
     }
     .menu-card{
         padding:25px;

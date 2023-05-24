@@ -2,7 +2,7 @@ import { buildHeader } from "./header"
 import { buildFooter } from "./footer";
 import { buildHero, buildAbout, buildMenuAction } from "./about";
 console.log("Hello webpack!")
-let currentTab = "Home"
+let currentTab = "Menu" //"Home", "Contact", "Menu"
 
 let content = document.querySelector('#content')
 let main = document.querySelector("main");

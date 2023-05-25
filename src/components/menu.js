@@ -1,7 +1,7 @@
 export function buildMenuAction(){
 
 }
-{
+
 {/* <h1>Cozy Bean Café</h1>
     <section id="menu">
         <h2 id="menu-header">Cozy Bean Café Menu</h2>
@@ -51,5 +51,5 @@ export function buildMenuAction(){
                 </div>
             </div>
         </div>
-    </section> */}
+    </section> */
 }

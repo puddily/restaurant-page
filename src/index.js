@@ -14,6 +14,7 @@ if(currentTab === "Home"){
     main.prepend(buildHero());
 }
 if(currentTab === "Menu"){
+    //TODO: Move topheader to module
     let topHeader = document.createElement('h1');
     topHeader.textContent = "Cozy Bean Cafe" 
     main.prepend(topHeader);

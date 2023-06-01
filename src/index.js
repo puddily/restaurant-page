@@ -3,7 +3,7 @@ import { buildFooter } from "./components/footer";
 import { buildHero, buildAbout, buildMenuAction } from "./components/about";
 import { buildMenu } from "./components/menu";
 console.log("Hello webpack!")
-let currentTab = "Menu" //"Home", "Contact", "Menu"
+let currentTab = "Contact" //"Home", "Contact", "Menu"
 
 let content = document.querySelector('#content')
 let main = document.querySelector("main");
@@ -19,5 +19,8 @@ if(currentTab === "Menu"){
     topHeader.textContent = "Cozy Bean Cafe" 
     main.prepend(topHeader);
     main.prepend(buildMenu());
+}
+if(currentTab === "Contact"){
+    //TODO: Move topheader to module
 }
 main.appendChild(buildFooter());

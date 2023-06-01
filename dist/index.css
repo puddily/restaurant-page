@@ -192,8 +192,9 @@ h2{
 #menu{
     /* background-color: rgb(255, 248, 224); */
     /* background-color: rgb(250, 236, 205); */
+    text-align:center;
     padding-inline:0px;
-    padding-bottom:25px;
+    padding-bottom:min(10%,200px);
 }
 #menu-header{
     /* --lighter-cream: rgb(253, 255, 232); */
@@ -202,9 +203,14 @@ h2{
     font-size:1.75rem;
     text-align:center;
     box-shadow: inset 0px -3px 2px 1px #efd3d3;
-    
-    
-    
+}
+#contact-map{
+    box-sizing:border-box;
+    width:min(100%,700px);
+    padding:8px;
+}
+#contact-blurb{
+    width:100%;
 }
 .menu-card{
     display:grid;

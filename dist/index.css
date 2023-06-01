@@ -189,15 +189,12 @@ h2{
     margin-bottom:0px;
 }
 
-#menu{
-    /* background-color: rgb(255, 248, 224); */
-    /* background-color: rgb(250, 236, 205); */
+#menu, #contact{
     text-align:center;
     padding-inline:0px;
     padding-bottom:min(10%,200px);
 }
-#menu-header{
-    /* --lighter-cream: rgb(253, 255, 232); */
+#menu-header, #contact-header{
     color: #f7ebdd;
     background-color: rgb(91 75 65);
     font-size:1.75rem;
@@ -274,7 +271,7 @@ h2{
     #menu{
         padding-inline:15%;
     }
-    #menu-header{
+    #menu-header, #contact-header{
         padding:25px;
     }
     .menu-card{

@@ -200,6 +200,7 @@ h2{
     font-size:1.75rem;
     text-align:center;
     box-shadow: inset 0px -3px 2px 1px #efd3d3;
+    padding:10px;
 }
 #contact-map{
     box-sizing:border-box;

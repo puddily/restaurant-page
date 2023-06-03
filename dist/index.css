@@ -175,7 +175,7 @@ nav ul li{
     justify-content:center;
     flex-basis:100%;
 }
-nav ul li:hover{
+nav ul li:hover, nav ul li.focused{
     background-color:var(--lighter-cream);
 }
 h1,h2{

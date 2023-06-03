@@ -1,28 +1,50 @@
-export function buildHeader(swapTab){
+export function buildHeader(swapTab, currentTab){
     const header = document.createElement('header')
     const nav = document.createElement('nav')
     const ul = document.createElement('ul')
     const liHome = document.createElement('li')
-    liHome.id = "header-home"
-    liHome.textContent = "Home"
-    liHome.addEventListener('click', ()=>{
+    const aHome = document.createElement('a')
+    aHome.id = "header-home"
+    aHome.textContent = "Home"
+    aHome.addEventListener('click', (e)=>{
+        e.preventDefault()
         swapTab('Home')
     })
     const liMenu = document.createElement('li')
-    liHome.id = "header-menu"
-    liMenu.textContent = "Menu"
-    liMenu.addEventListener('click', ()=>{
+    const aMenu = document.createElement('a')
+    aMenu.id = "header-menu"
+    aMenu.textContent = "Menu"
+    aMenu.addEventListener('click', (e)=>{
+        e.preventDefault()
         swapTab('Menu')
     })
     const liContact = document.createElement('li')
-    liContact.addEventListener('click', ()=>{
+    const aContact = document.createElement('a')
+    aContact.addEventListener('click', (e)=>{
+        e.preventDefault()
         swapTab('Contact')
     })
-    liHome.id = "header-contact"
-    liContact.textContent = "Contact"
+    aContact.id = "header-contact"
+    aContact.textContent = "Contact"
+
+    if(currentTab === 'Home'){
+        liHome.classList.add('focused')
+    }
+    else if(currentTab === 'Menu'){
+        liMenu.classList.add('focused')
+    }
+    else if(currentTab === 'Contact'){
+        liContact.classList.add('focused')
+    }
+
+    liHome.appendChild(aHome)
+    liMenu.appendChild(aMenu)
+    liContact.appendChild(aContact)
+
     ul.appendChild(liHome)
     ul.appendChild(liMenu)
     ul.appendChild(liContact)
+
     nav.appendChild(ul)
     header.appendChild(nav)
     return header

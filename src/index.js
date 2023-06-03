@@ -20,7 +20,7 @@ function buildSite(tab){ //"Home", "Contact", "Menu"
         if(newTab !== currentTab) {
             buildSite(newTab)
         }
-    }));
+    }, currentTab));
     if(currentTab === "Home"){
         main.prepend(buildMenuAction());
         main.prepend(buildAbout());
@@ -41,10 +41,6 @@ function buildSite(tab){ //"Home", "Contact", "Menu"
         main.prepend(buildContact());
     }
     main.appendChild(buildFooter());
-}
-
-function swapTab(tab){
-    buildSite(tab);
 }
 
 buildSite("Home");

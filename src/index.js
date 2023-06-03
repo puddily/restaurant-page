@@ -4,6 +4,7 @@ import { buildHero, buildAbout, buildMenuAction } from "./components/about";
 import { buildMenu } from "./components/menu";
 import { buildContact } from "./components/contact";
 console.log("Hello webpack!")
+
 function buildSite(tab){ //"Home", "Contact", "Menu"
     let currentTab = tab
     let content = document.querySelector('#content')
@@ -15,7 +16,11 @@ function buildSite(tab){ //"Home", "Contact", "Menu"
     let main = content.querySelector("main");
 
 
-    content.prepend(buildHeader());
+    content.prepend(buildHeader((newTab)=>{
+        if(newTab !== currentTab) {
+            buildSite(newTab)
+        }
+    }));
     if(currentTab === "Home"){
         main.prepend(buildMenuAction());
         main.prepend(buildAbout());
@@ -38,9 +43,8 @@ function buildSite(tab){ //"Home", "Contact", "Menu"
     main.appendChild(buildFooter());
 }
 
-function swapTab(){
-
-
+function swapTab(tab){
+    buildSite(tab);
 }
 
 buildSite("Home");

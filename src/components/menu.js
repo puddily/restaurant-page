@@ -53,6 +53,7 @@ function buildMenuCard(itemName, description, price){
     let menuCardImg = document.createElement('img')
     menuCardImg.setAttribute('src', './images/coffee-4752461.svg')
     menuCardImg.setAttribute('width', '100px')
+    menuCardImg.classList.add('menu-img')
 
     let menuCardInfoContainer = document.createElement('div')
     menuCardInfoContainer.classList.add('card-info')

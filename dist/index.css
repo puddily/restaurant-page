@@ -192,7 +192,11 @@ h2{
     margin-bottom:0px;
 }
 
-#menu, #contact{
+#menu{
+    padding-inline:0px;
+    padding-bottom:min(10%,200px);
+}
+#contact{
     text-align:center;
     padding-inline:0px;
     padding-bottom:min(10%,200px);
@@ -214,11 +218,22 @@ h2{
     width:100%;
 }
 .menu-card{
-    display:grid;
-    grid-auto-flow:column;
-    grid-template-columns: min-content 1fr;
+    display:flex;
     align-items:center;
-    column-gap:25px;
+}
+.card-info{
+    margin-bottom:15px;
+}
+.menu-cards{
+    padding-top:8px;
+}
+.menu-card h3{
+    padding:2px;
+    margin:2px;
+}
+.menu-card p{
+    padding:2px;
+    margin:2px;
 }
 
 @media (min-width: 900px){
@@ -283,5 +298,13 @@ h2{
     }
     .menu-card{
         padding:25px;
+    }
+    .card-info{ 
+        padding-left:100px;
+    }
+    .menu-img{
+        display:block;
+        position:absolute;
+        left:15%;
     }
 }

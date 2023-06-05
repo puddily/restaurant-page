@@ -170,10 +170,13 @@ nav ul{
 nav ul li{
     list-style-type:none;
     font-size:1.25rem;
-    padding:1rem 0px;
     display:flex;
     justify-content:center;
     flex-basis:100%;
+}
+nav ul li a{
+    display:block;
+    padding:1rem 0px;
 }
 nav ul li:hover, nav ul li.focused{
     background-color:var(--lighter-cream);
@@ -264,6 +267,9 @@ h2{
     }
     nav ul li{
         flex-basis:0;
+    }
+    nav ul li a{
+        display:block;
         padding:1rem 2rem;
     }
     nav ul li:nth-child(1){

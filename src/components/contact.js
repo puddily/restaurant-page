@@ -8,7 +8,8 @@ export function buildContact(){
     contactBlurb.textContent = "We would love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. Here are the ways you can get in touch!"
     contactBlurb.id = "contact-blurb";
     let contactMap = document.createElement('img');
-    contactMap.setAttribute('src', 'images/map.png')    
+    contactMap.setAttribute('src', 'images/map.png')   
+    contactMap.id = "contact-map"; 
     let email = document.createElement('p')
     email.textContent = "Email: contact@cozybeancafe.com"
     let phone = document.createElement('p')

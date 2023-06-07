@@ -22,7 +22,10 @@ function buildSite(tab){ //"Home", "Contact", "Menu"
         }
     }, currentTab));
     if(currentTab === "Home"){
-        main.prepend(buildMenuAction());
+        //TODO: Modularize sections into "Home Page" module
+        main.prepend(buildMenuAction(()=>{
+            buildSite('Menu')
+        }));
         main.prepend(buildAbout());
         main.prepend(buildHero());
     }

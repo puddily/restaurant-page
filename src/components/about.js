@@ -70,7 +70,7 @@ export function buildAbout(){
     </div>
 </section> */}
 
-export function buildMenuAction(){
+export function buildMenuAction(goToHomeTab){
     let section = document.createElement('section')
     section.id = "menu-action"
     let overlay = document.createElement('div')
@@ -83,6 +83,10 @@ export function buildMenuAction(){
     menuLink.id = ("menu-link");
     let menuLinkA = document.createElement('a')
     menuLinkA.textContent = "Visit our menu"
+    menuLinkA.addEventListener('click', (e)=>{
+        e.preventDefault()
+        goToHomeTab()
+    })
     menuLink.appendChild(menuLinkA)
 
     overlay.appendChild(container1)

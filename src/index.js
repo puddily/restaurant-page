@@ -40,7 +40,7 @@ function buildSite(tab){ //"Home", "Contact", "Menu"
         main.prepend(topHeader);
         main.prepend(buildContact());
     }
-    main.appendChild(buildFooter());
+    content.appendChild(buildFooter());
 }
 
 buildSite("Home");

@@ -11,15 +11,15 @@
     box-shadow: inset 0px -3px 2px 1px #efd3d3;
     padding:10px;
 }
+.menu-cards{
+    padding-top:8px;
+}
 .menu-card{
     display:flex;
     align-items:center;
 }
 .card-info{
     margin-bottom:15px;
-}
-.menu-cards{
-    padding-top:8px;
 }
 .menu-card h3{
     padding:2px;

@@ -1,13 +1,13 @@
 .alt-color{
     color:var(--light-cream-accent);
 }
+h1{
+    display:none; /* Do not display top-left header on mobile views */
+}
 nav{
     background-color:var(--light-cream);
     border-bottom:4px solid var(--dark-cream);
     box-shadow: 0 2px 2px rgb(212 148 139 / 20%);
-}
-nav ul li:hover, nav ul li.focused{
-    background-color:var(--lighter-cream);
 }
 nav ul{
     padding:0px;
@@ -22,11 +22,27 @@ nav ul li{
     justify-content:center;
     flex-basis:100%;
 }
+nav ul li:hover, nav ul li.focused{
+    background-color:var(--lighter-cream);
+}
 nav ul li a{
     display:block;
     padding:1rem 0px;
 }
 @media (min-width: 900px){
+    h1{
+        text-align:center;
+        margin:auto;
+        padding:0px;
+        margin-top:8px;
+        font-size:1.75rem;
+        display:inline-block;
+        position:absolute;
+        top:12px;
+        left:16px;
+        padding:0px;
+        margin:0px;
+    }
     nav ul{
         padding:0px;
         margin:0px;

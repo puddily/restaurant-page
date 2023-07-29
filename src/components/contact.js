@@ -8,11 +8,15 @@ export function buildContact(){
     contactHeader.textContent = "Contact Us"
     contactHeader.id = "contact-header";
     let contactBlurb = document.createElement('p')
-    contactBlurb.textContent = "We would love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. Here are the ways you can get in touch!"
+    contactBlurb.textContent = 
+    `We would love to hear from you! If you have any questions, 
+    feedback, or inquiries, please don't hesitate to reach out to us. 
+    Here are the ways you can get in touch!`
     contactBlurb.id = "contact-blurb";
     let contactMap = document.createElement('img');
     contactMap.setAttribute('src', map)   
-    contactMap.setAttribute('alt', "Map containing address in Huntsville, AL")   
+    contactMap.setAttribute('alt', 
+    "Map containing address in Huntsville, AL")   
     contactMap.id = "contact-map"; 
     let email = document.createElement('p')
     email.textContent = "Email: contact@cozybeancafe.com"
@@ -26,12 +30,3 @@ export function buildContact(){
     contactSection.appendChild(phone)
     return contactSection;
 }
-
-{/* 
-<section id="contact">
-    <h2 id="contact-header">Contact Us</h2>
-    <p id="contact-blurb">We would love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. Here are the ways you can get in touch!</p>
-    <img id="contact-map" src="images/map.png"></img>
-    <p>Email: contact@cozybeancafe.com</p>
-    <p>Phone: +1 (123) 456-7890</p>
-</section> */}

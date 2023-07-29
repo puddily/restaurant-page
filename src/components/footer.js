@@ -5,8 +5,8 @@ export function buildFooter() {
     section.id = 'footer'
     let p = document.createElement('p')
     let a = document.createElement('a')
-    a.href = 'https://github.com/puddily'
-    a.textContent = 'Made by Puddily - view my github'
+    a.href = 'https://github.com/puddily/restaurant-page'
+    a.textContent = 'Made by Puddily - view me on Github!'
 
     p.appendChild(a)
     section.appendChild(p)

@@ -31,14 +31,14 @@ function buildSite(tab){ //"Home", "Contact", "Menu"
         main.prepend(buildHero());
     }
     if(currentTab === "Menu"){
-        //TODO: Move topheader to module
+        //TODO: Move topHeader to module
         let topHeader = document.createElement('h1');
         topHeader.textContent = "Cozy Bean Café" 
         main.prepend(topHeader);
         main.prepend(buildMenu());
     }
     if(currentTab === "Contact"){
-        //TODO: Move topheader to module
+        //TODO: Move topHeader to module
         let topHeader = document.createElement('h1');
         topHeader.textContent = "Cozy Bean Café" 
         main.prepend(topHeader);

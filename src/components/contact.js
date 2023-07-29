@@ -12,6 +12,7 @@ export function buildContact(){
     contactBlurb.id = "contact-blurb";
     let contactMap = document.createElement('img');
     contactMap.setAttribute('src', map)   
+    contactMap.setAttribute('alt', "Map containing address in Huntsville, AL")   
     contactMap.id = "contact-map"; 
     let email = document.createElement('p')
     email.textContent = "Email: contact@cozybeancafe.com"

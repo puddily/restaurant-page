@@ -55,6 +55,7 @@ function buildMenuCard(itemName, description, price){
     menuCard.classList.add('menu-card')
     let menuCardImg = document.createElement('img')
     menuCardImg.setAttribute('src', menuItem)
+    menuCardImg.setAttribute('alt', "")
     menuCardImg.setAttribute('width', '100px')
     menuCardImg.classList.add('menu-img')
 

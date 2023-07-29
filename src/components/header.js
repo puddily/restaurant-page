@@ -6,6 +6,8 @@ export function buildHeader(swapTab, currentTab){
     const ul = document.createElement('ul')
     const liHome = document.createElement('li')
     const aHome = document.createElement('a')
+    const topHeader = document.createElement('h1');
+    topHeader.textContent = "Cozy Bean Café" 
     aHome.id = "header-home"
     aHome.textContent = "Home"
     aHome.addEventListener('click', (e)=>{
@@ -47,6 +49,7 @@ export function buildHeader(swapTab, currentTab){
     ul.appendChild(liMenu)
     ul.appendChild(liContact)
 
+    nav.appendChild(topHeader)
     nav.appendChild(ul)
     header.appendChild(nav)
     return header

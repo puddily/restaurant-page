@@ -6,6 +6,7 @@ export function buildHero(){
     section.id = "hero"
     let img = document.createElement('img')
     img.setAttribute('src', coffee)
+    img.setAttribute('alt', "")
     img.id= "hero-img"
     let heroContentOverlay = document.createElement('div')
     heroContentOverlay.id = "hero-content-overlay"
@@ -47,8 +48,6 @@ export function buildAbout(){
     let contentWrapper = document.createElement('div')
     contentWrapper.classList.add('content-wrapper')
 
-    let h1 = document.createElement('h1')
-        h1.textContent = "Cozy Bean Café"
     let h2 = document.createElement('h2')
         h2.textContent = "Simple, Homely, Coffee"
     let p1 = document.createElement('p')
@@ -56,7 +55,6 @@ export function buildAbout(){
     let p2 = document.createElement('p')
         p2.textContent = "Our dedicated baristas take pride in crafting each coffee with precision and care. From classic espresso to creamy cappuccinos and refreshing cold brews, our menu offers a wide range of options to cater to all coffee lovers."
 
-    contentWrapper.appendChild(h1)
     contentWrapper.appendChild(h2)
     contentWrapper.appendChild(p1)
     contentWrapper.appendChild(p2)

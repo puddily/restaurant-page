@@ -1,7 +1,15 @@
 import "./styles/about.css"
 import coffee from "./images/coffee.jpg"
 
-export function buildHero(){
+export function buildHome(switchToMenuTab){   
+    let container = document.createElement('div')
+    container.prepend(buildMenuAction(switchToMenuTab));
+    container.prepend(buildAbout());
+    container.prepend(buildHero());
+    return container
+}
+
+function buildHero(){
     let section = document.createElement('section')
     section.id = "hero"
     let img = document.createElement('img')
@@ -42,7 +50,7 @@ export function buildHero(){
 </section> */}
 
 
-export function buildAbout(){
+function buildAbout(){
     let section = document.createElement('section')
     section.id = "about"
     let contentWrapper = document.createElement('div')
@@ -71,7 +79,7 @@ export function buildAbout(){
     </div>
 </section> */}
 
-export function buildMenuAction(goToHomeTab){
+function buildMenuAction(goToHomeTab){
     let section = document.createElement('section')
     section.id = "menu-action"
     let overlay = document.createElement('div')

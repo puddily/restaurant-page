@@ -1,6 +1,6 @@
 import { buildHeader } from "./components/header"
 import { buildFooter } from "./components/footer";
-import { buildHero, buildAbout, buildMenuAction } from "./components/about";
+import { buildHome } from "./components/home";
 import { buildMenu } from "./components/menu";
 import { buildContact } from "./components/contact";
 import "./index.css"
@@ -23,12 +23,11 @@ function buildSite(tab){ //"Home", "Contact", "Menu"
         }
     }, currentTab));
     if(currentTab === "Home"){
-        //TODO: Modularize sections into "Home Page" module
-        main.prepend(buildMenuAction(()=>{
-            buildSite('Menu')
+        //Pass in buildSite('Menu') so that the "visit our menu" button can
+        //switch to the menu tab
+        main.prepend(buildHome(()=>{
+            buildSite('Menu') 
         }));
-        main.prepend(buildAbout());
-        main.prepend(buildHero());
     }
     if(currentTab === "Menu"){
         main.prepend(buildMenu());

@@ -1,0 +1,50 @@
+
+#menu{
+    padding-inline:0px;
+    padding-bottom:min(5%,50px);
+}
+#menu-header{
+    color: #f7ebdd;
+    background-color: rgb(91 75 65);
+    font-size:1.75rem;
+    text-align:center;
+    box-shadow: inset 0px -3px 2px 1px #efd3d3;
+    padding:10px;
+}
+.menu-card{
+    display:flex;
+    align-items:center;
+}
+.card-info{
+    margin-bottom:15px;
+}
+.menu-cards{
+    padding-top:8px;
+}
+.menu-card h3{
+    padding:2px;
+    margin:2px;
+}
+.menu-card p{
+    padding:2px;
+    margin:2px;
+}
+@media (min-width: 900px){
+    #menu{
+        padding-inline:15%;
+    }
+    #menu-header{
+        padding:25px;
+    }
+    .menu-card{
+        padding:25px;
+    }
+    .card-info{ 
+        padding-left:100px;
+    }
+    .menu-img{
+        display:block;
+        position:absolute;
+        left:15%;
+    }
+}

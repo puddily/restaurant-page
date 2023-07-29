@@ -1,9 +1,12 @@
+import "./styles/about.css"
+import coffee from "./images/coffee.jpg"
+
 export function buildHero(){
     let section = document.createElement('section')
     section.id = "hero"
     let img = document.createElement('img')
+    img.setAttribute('src', coffee)
     img.id= "hero-img"
-    img.setAttribute('src', 'images/coffee.jpg')
     let heroContentOverlay = document.createElement('div')
     heroContentOverlay.id = "hero-content-overlay"
 

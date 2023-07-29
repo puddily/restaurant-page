@@ -1,0 +1,29 @@
+#contact{
+    text-align:center;
+    padding-inline:0px;
+    padding-bottom:min(5%,50px);
+}
+#contact-header{
+    color: #f7ebdd;
+    background-color: rgb(91 75 65);
+    font-size:1.75rem;
+    text-align:center;
+    box-shadow: inset 0px -3px 2px 1px #efd3d3;
+    padding:10px;
+}
+#contact-map{
+    box-sizing:border-box;
+    width:min(95vw,700px);
+    padding:8px;
+}
+#contact-blurb{
+    width:100%;
+}
+@media (min-width: 900px){
+    #contact{
+        padding-inline:15%;
+    }
+    #contact-header{
+        padding:25px;
+    }
+}

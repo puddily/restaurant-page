@@ -1,3 +1,5 @@
+import "./styles/footer.css"
+
 export function buildFooter(){
     let section = document.createElement('section')
     section.id = "footer"

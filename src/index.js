@@ -3,6 +3,7 @@ import { buildFooter } from "./components/footer";
 import { buildHero, buildAbout, buildMenuAction } from "./components/about";
 import { buildMenu } from "./components/menu";
 import { buildContact } from "./components/contact";
+import "./index.css"
 console.log("Hello webpack!")
 
 function buildSite(tab){ //"Home", "Contact", "Menu"

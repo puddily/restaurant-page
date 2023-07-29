@@ -1,3 +1,6 @@
+import "./styles/menu.css"
+import menuItem from "./images/menu-item.svg"
+
 export function buildMenu(){
     let menuSection = document.createElement('section')
     menuSection.id = "menu"
@@ -51,7 +54,7 @@ function buildMenuCard(itemName, description, price){
     let menuCard = document.createElement('div')
     menuCard.classList.add('menu-card')
     let menuCardImg = document.createElement('img')
-    menuCardImg.setAttribute('src', './images/coffee-4752461.svg')
+    menuCardImg.setAttribute('src', menuItem)
     menuCardImg.setAttribute('width', '100px')
     menuCardImg.classList.add('menu-img')
 

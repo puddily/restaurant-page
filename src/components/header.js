@@ -1,3 +1,5 @@
+import "./styles/header.css"
+
 export function buildHeader(swapTab, currentTab){
     const header = document.createElement('header')
     const nav = document.createElement('nav')

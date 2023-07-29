@@ -91,9 +91,11 @@ function buildMenuAction(goToHomeTab) {
     let menuLink = document.createElement('div')
     menuLink.id = 'menu-link'
     let menuLinkA = document.createElement('a')
+    menuLinkA.href = '#Menu'
     menuLinkA.textContent = 'Visit our menu'
     menuLinkA.addEventListener('click', (e) => {
         e.preventDefault()
+        window.location = '#Menu'
         goToHomeTab()
     })
     menuLink.appendChild(menuLinkA)

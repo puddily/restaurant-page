@@ -26,6 +26,8 @@ nav ul li:hover, nav ul li.focused{
     background-color:var(--lighter-cream);
 }
 nav ul li a{
+    text-decoration:none;
+    color:inherit;
     display:block;
     padding:1rem 0px;
 }

@@ -10,22 +10,28 @@ export function buildHeader(swapTab, currentTab) {
     topHeader.textContent = 'Cozy Bean Café'
     aHome.id = 'header-home'
     aHome.textContent = 'Home'
+    aHome.href = '#Home'
     aHome.addEventListener('click', (e) => {
         e.preventDefault()
+        window.location = '#Home'
         swapTab('Home')
     })
     const liMenu = document.createElement('li')
     const aMenu = document.createElement('a')
     aMenu.id = 'header-menu'
     aMenu.textContent = 'Menu'
+    aMenu.href = '#Menu'
     aMenu.addEventListener('click', (e) => {
         e.preventDefault()
+        window.location = '#Menu'
         swapTab('Menu')
     })
     const liContact = document.createElement('li')
     const aContact = document.createElement('a')
+    aContact.href = '#Contact'
     aContact.addEventListener('click', (e) => {
         e.preventDefault()
+        window.location = '#Contact'
         swapTab('Contact')
     })
     aContact.id = 'header-contact'

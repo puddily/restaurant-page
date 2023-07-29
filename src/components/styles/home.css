@@ -83,7 +83,7 @@
 #menu-action a:hover{
     background-color:#e8836f;
 }
-#menu-action a:active{
+#menu-action a:active, #menu-action a:focus {
     background-color:#f0b694;
 }
 #menu-action-overlay h3{

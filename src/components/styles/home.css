@@ -68,6 +68,8 @@
     margin-top:32px;
 }
 #menu-action a{
+    text-decoration:none;
+    color:inherit;
     font-family:"Roboto", sans-serif;
     font-size:1.375rem;
     font-weight:600;

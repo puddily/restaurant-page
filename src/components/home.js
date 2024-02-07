@@ -85,7 +85,7 @@ function buildMenuAction(goToHomeTab) {
     let container3 = buildMenuActionContainer(
         'Help the globe',
         `Our coffee cups are made from 100% recycled materials. We also use 
-        biodegradable straws and composting our coffee grounds.`,
+        biodegradable straws and compost our coffee grounds.`,
     )
 
     let menuLink = document.createElement('div')
